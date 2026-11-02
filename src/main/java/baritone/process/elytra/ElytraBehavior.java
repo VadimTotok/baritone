@@ -1318,6 +1318,9 @@ public final class ElytraBehavior implements Helper {
     }
 
     private void trySwapElytra() {
+        if (Baritone.settings().elytraInfDurability.value) {
+            return;
+        }
         if (!Baritone.settings().elytraAutoSwap.value || !invTransactionQueue.isEmpty()) {
             return;
         }

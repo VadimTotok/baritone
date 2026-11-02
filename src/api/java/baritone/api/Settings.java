@@ -1562,6 +1562,8 @@ public final class Settings {
      */
     public final Setting<Boolean> elytraAllowAboveRoof = new Setting<>(false);
 
+    public final Setting<Boolean> elytraInfDurability = new Setting<>(false);
+
     /**
      * Allow the pathfinder to access the baritone cache to improve pathing
      */
